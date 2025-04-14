@@ -5,21 +5,6 @@ library(tidyverse)
 library(data.table)
 
 fp_output = './result/smr/'
-# ao = TwoSampleMR::available_outcomes()
-# ao$sample_size = ifelse(
-#   is.na(ao$sample_size),ao$ncase+ao$ncontrol,ao$sample_size
-# )
-# saveRDS(ao,file = './tools/IEU available outcome.rds')
-
-ao = readRDS('./tools/IEU available outcome.rds')
-
-ao %>% filter(consortium=='IIBDGC') %>% 
-  filter(population=='European') -> a2
-ao %>% filter(consortium=='UKB') %>% 
-  filter(population=='European') %>% 
-  filter(grepl('inflammatory bowel disease',trait,ignore.case=T))
-
-
 
 # 数据说明 ##
 # IIBDGC # 
