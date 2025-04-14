@@ -29,16 +29,11 @@ ao %>% filter(consortium=='UKB') %>%
 
 # UKB # 
 # 20002_1461: UKB-IBD --
-# 20002_1462: UKB-CD --
-# 20002_1463: UKB-UC
-# phecode-555.2: UKB-UC
-# phecode-555.21: UKB-UC(chronic) --
 # icd10-K50:UKB-CD(regional enteritis)
 # icd10-K51:UKB-UC
-# ULCERNAS:UKB-UC --
 
 # FinnGen # 
-# CD =c('CHRONSMALL','CHRONLARGE')
+# CD =c('CHRONLARGE')
 # UC='K11_UC_STRICT2'
 # IBD = 'K11_KELAIBD'
 
